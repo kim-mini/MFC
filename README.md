@@ -17,6 +17,21 @@ MbufExport : 데이터를 파일로 저장하기 위한 함수
 ```cpp
 
 MbufExport(FileName, FileFormat, SrcBufId);
-// 파일이름, 파일포멧, 저장할 이미지버퍼
 
 ```
+
+  -  파일이름
+  -  파일포멧
+  -  저장할 이미지버퍼
+
+CreatePen : 선을 만드는 함수
+
+```cpp
+
+CreatePen(pen style, width, color)
+
+```
+
+  - 선의 종류 : PS_SOLID, PS_DASH, PS_DASHDOT, PS_DASHDOTDOT, PS_NULL
+  - 선의 굵기
+  - 선의 색깔

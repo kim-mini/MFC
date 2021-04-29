@@ -39,12 +39,12 @@ CreatePen(pen style, width, color)
   - 선의 굵기
   - 선의 색깔
 
-oldpen = pDC->SelectObject(&pen); : 펜을 DC에 등록
+`oldpen` = pDC->SelectObject(&pen); : 펜을 DC에 등록
 
-MoveTo (x, y) : 현재 포지션을 특정한 좌표(x, y)로 이동
+`MoveTo (x, y)` : 현재 포지션을 특정한 좌표(x, y)로 이동
 
-LineTo (x, y) : 현재 포지션에서 (x, y)좌표까지 선을 그림 
+`LineTo (x, y)` : 현재 포지션에서 (x, y)좌표까지 선을 그림 
 
-pDC->SelectObject(); : DC를 아용해 펜을 원위치로 돌려놓는다
+`pDC->SelectObject();` : DC를 아용해 펜을 원위치로 돌려놓는다
 
-pen.DeleteObject(); : 사용이 완료된 펜 삭제
+`pen.DeleteObject();` : 사용이 완료된 펜 삭제

@@ -47,6 +47,7 @@ CreatePen(pen style, width, color)
 
 `pDC->SelectObject();` : DC를 아용해 펜을 원위치로 돌려놓는다
 
-  - GDI는 Graphic Device Interface이다 (그래픽 장치 접근 혹은 접속) GDI는 화면에 어떠한 접근하는 것을 담당하는데 화면에 글을 쓰거나 그림을 넣거나 하는 행동들
-  - DC는 Device Context이ㅏㄷ (장치 내용 혹은 관계) GDI를 추상화한 것이 DC
+  - `GDI`는 `Graphic Device Interface`이다 (그래픽 장치 접근 혹은 접속) GDI는 `화면에 어떠한 접근하는 것을 담당`하는데 (화면에 글을 쓰거나 그림을 넣거나 하는 행동)
+  - `DC`는 `Device Context`이다 (장치 내용 혹은 관계) `GDI를 추상화한 것이 DC`
+  
 `pen.DeleteObject();` : 사용이 완료된 펜 삭제

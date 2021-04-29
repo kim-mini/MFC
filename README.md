@@ -58,7 +58,7 @@ CreatePen(pen style, width, color)
 
 코드가 돌아가는데 걸리는 시간을 측정하는 코드
 
-```cpp
+```cpp   
 
 MappTimer(M_TIMER_RESET, M_NULL);
 
@@ -67,3 +67,6 @@ MappTimer(M_TIMER_RESET, M_NULL);
 MappTimer(M_TIMER_READ, &Time);
 
 ```
+
+`sprintf (str, "string")` : 문자열에 서식문자열을 저장한다
+`fprintf (fp, "string")` : fp가 가르키는 파일에다가 문자열 쓰기

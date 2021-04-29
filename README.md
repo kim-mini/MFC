@@ -51,3 +51,19 @@ CreatePen(pen style, width, color)
   - `DC`는 `Device Context`이다 (장치 내용 혹은 관계) `GDI를 추상화한 것이 DC`
   
 `pen.DeleteObject();` : 사용이 완료된 펜 삭제
+
+---
+
+`MappTimer` : 시간을 측정하는 함수
+
+코드가 돌아가는데 걸리는 시간을 측정하는 코드
+
+```cpp
+
+MappTimer(M_TIMER_RESET, M_NULL);
+
+/*이곳에 시간측정 대상이 되는 프로세스가 들어간다.*/
+
+MappTimer(M_TIMER_READ, &Time);
+
+```

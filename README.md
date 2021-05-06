@@ -1,5 +1,16 @@
 # MFC 공부 기록
 
+`enum` : 변수들을 열거해 놓는다
+
+```cpp
+// typedef : 별칭을 붙여 준다
+
+typedef enum func{
+  EXAMPLE_ONE // assingned 0
+  EXAMPLE_TWO // assingned 2
+}F;
+```
+
 `MmodDefine` : 모델 정의하는 함수
 
 ```cpp
@@ -69,4 +80,24 @@ MappTimer(M_TIMER_READ, &Time);
 ```
 
 `sprintf (str, "string")` : 문자열에 서식문자열을 저장한다
+
 `fprintf (fp, "string")` : fp가 가르키는 파일에다가 문자열 쓰기
+
+`GetLocalTime` : 현재의 시간을 받을 수 있는 함수
+
+```cpp
+typedef struct _SYSTEMTIME {
+    WORD wYear;
+    WORD wMonth;
+    WORD wDayOfWeek;
+    WORD wDay;
+    WORD wHour;
+    WORD wMinute;
+    WORD wSecond;
+    WORD wMilliseconds;
+} SYSTEMTIME, *PSYSTEMTIME, *LPSYSTEMTIME;
+
+// 사용할 떄는 변수의 주소를 넣어준다
+GetLocalTime(&systime)
+systime.wYear // << 이런식으로 쓰면 년도가 출력이 된다
+```

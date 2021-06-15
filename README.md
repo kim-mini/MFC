@@ -102,8 +102,14 @@ GetLocalTime(&systime)
 systime.wYear // << 이런식으로 쓰면 년도가 출력이 된다
 ```
 
-처음 초기화 설정할 때 버튼의 글자 컨트롤 하기
+## 처음 초기화 설정할 때 버튼의 글자 컨트롤 하기
 
 ```cpp
 GetDlgItem( 버튼ID )->SetWindowTextW( TEXT );
+```
+
+## 다이알로그창 종료
+
+```cpp
+AfxGetMainWnd()->PostMessage(WM_CLOSE);
 ```

@@ -102,6 +102,8 @@ GetLocalTime(&systime)
 systime.wYear // << 이런식으로 쓰면 년도가 출력이 된다
 ```
 
+---
+
 ## 처음 초기화 설정할 때 버튼의 글자 컨트롤 하기
 
 ```cpp
@@ -113,3 +115,11 @@ GetDlgItem( 버튼ID )->SetWindowTextW( TEXT );
 ```cpp
 AfxGetMainWnd()->PostMessage(WM_CLOSE);
 ```
+## 체크박스 체크 여부 확인
+
+```cpp
+((CButton*)GetDlgItem( 버튼ID ))->GetCheck()
+```
+
+  - 체크가 되어있으면 `TRUE`
+  - 체크가 안되어있으면 `FALSE`를 반환한다

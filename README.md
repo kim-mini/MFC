@@ -123,3 +123,6 @@ AfxGetMainWnd()->PostMessage(WM_CLOSE);
 
   - 체크가 되어있으면 `TRUE`
   - 체크가 안되어있으면 `FALSE`를 반환한다
+
+## Grid control
+

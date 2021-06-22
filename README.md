@@ -126,3 +126,4 @@ AfxGetMainWnd()->PostMessage(WM_CLOSE);
 
 ## Grid control
 
+그리드 컨트롤 창을 만들어서 `row`, `column`을 지정하여 레이아웃을 만들 수 있다
